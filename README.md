@@ -1,7 +1,7 @@
 
 # College Connect  
 
-A social media platform for college students to make connections with students of their college.
+A social networking platform, will be exclusively designed for college students. Drawing inspiration from platforms like Twitter, College Connect provides a dedicated space for students to share updates, thoughts, and experiences related to their college journey.
 
 
 
