@@ -1,4 +1,3 @@
-
 import { getAuthSession } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { SubredditValidator } from '@/lib/validators/subreddit'
@@ -23,7 +22,7 @@ export async function POST(req: Request) {
     })
 
     if (subredditExists) {
-      return new Response('Subspace already exists', { status: 409 })
+      return new Response('Subreddit already exists', { status: 409 })
     }
 
     // create subreddit and associate it with the user
@@ -48,6 +47,6 @@ export async function POST(req: Request) {
       return new Response(error.message, { status: 422 })
     }
 
-    return new Response('Could not create subspace', { status: 500 })
+    return new Response('Could not create subreddit', { status: 500 })
   }
 }

@@ -1,4 +1,3 @@
-
 import SignIn from '@/components/SignIn'
 import { buttonVariants } from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
@@ -16,7 +15,7 @@ const page: FC = () => {
             buttonVariants({ variant: 'ghost' }),
             'self-start -mt-20'
           )}>
-          <ChevronLeft className='mr-2 h-4 w-4  ' />
+          <ChevronLeft className='mr-2 h-4 w-4' />
           Home
         </Link>
 

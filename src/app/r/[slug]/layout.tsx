@@ -1,4 +1,3 @@
-
 import SubscribeLeaveToggle from '@/components/SubscribeLeaveToggle'
 import ToFeedButton from '@/components/ToFeedButton'
 import { buttonVariants } from '@/components/ui/Button'
@@ -12,7 +11,7 @@ import { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   title: 'College Connect',
-  description: 'A college social media built out of reactJS and Typescript.',
+  description: 'A Reddit clone built with Next.js and TypeScript.',
 }
 
 const Layout = async ({
@@ -62,7 +61,7 @@ const Layout = async ({
   })
 
   return (
-    <div className='sm:container max-w-7xl mx-auto h-full pt-12'>
+    <div className='mt-[-60px] sm:container max-w-7xl mx-auto h-full pt-12'>
       <div>
         <ToFeedButton />
 
@@ -70,7 +69,7 @@ const Layout = async ({
           <ul className='flex flex-col col-span-2 space-y-6'>{children}</ul>
 
           {/* info sidebar */}
-          <div className='overflow-hidden h-fit rounded-lg border border-gray-200 order-first md:order-last'>
+          <div className='overflow-hidden h-fit rounded-lg bg-gray-100 border border-gray-200 order-first md:order-last'>
             <div className='px-6 py-4'>
               <p className='font-semibold py-3'>About r/{subreddit.name}</p>
             </div>

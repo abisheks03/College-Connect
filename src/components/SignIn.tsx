@@ -9,7 +9,7 @@ const SignIn = () => {
         <Icons.logo className='mx-auto h-6 w-6' />
         <h1 className='text-2xl font-semibold tracking-tight'>Welcome back</h1>
         <p className='text-sm max-w-xs mx-auto'>
-          By continuing, you are setting up a College Connect website.
+          By continuing, you are setting up a College Connect account.
         </p>
       </div>
       <UserAuthForm />

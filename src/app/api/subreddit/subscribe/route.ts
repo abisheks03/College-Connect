@@ -1,4 +1,3 @@
-
 import { getAuthSession } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { SubredditSubscriptionValidator } from '@/lib/validators/subreddit'
@@ -24,7 +23,7 @@ export async function POST(req: Request) {
     })
 
     if (subscriptionExists) {
-      return new Response("You've already subscribed to this subspace", {
+      return new Response("You've already subscribed to this subreddit", {
         status: 400,
       })
     }
@@ -45,7 +44,7 @@ export async function POST(req: Request) {
     }
 
     return new Response(
-      'Could not subscribe to subspace at this time. Please try later',
+      'Could not subscribe to subreddit at this time. Please try later',
       { status: 500 }
     )
   }

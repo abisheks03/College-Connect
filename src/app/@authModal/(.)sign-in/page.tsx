@@ -1,4 +1,3 @@
-
 import CloseModal from '@/components/CloseModal'
 import SignIn from '@/components/SignIn'
 import { FC } from 'react'

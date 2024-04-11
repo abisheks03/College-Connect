@@ -1,4 +1,3 @@
-
 'use client'
 
 import { cn } from '@/lib/utils'
@@ -12,7 +11,7 @@ import { Icons } from './Icons'
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 const UserAuthForm: FC<UserAuthFormProps> = ({ className, ...props }) => {
-  const { toast } = useToast() 
+  const { toast } = useToast()
   const [isLoading, setIsLoading] = React.useState<boolean>(false)
 
   const loginWithGoogle = async () => {

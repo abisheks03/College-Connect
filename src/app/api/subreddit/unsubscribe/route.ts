@@ -1,4 +1,3 @@
-
 import { getAuthSession } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { SubredditSubscriptionValidator } from '@/lib/validators/subreddit'
@@ -25,14 +24,14 @@ export async function POST(req: Request) {
 
     if (!subscriptionExists) {
       return new Response(
-        "You've not been subscribed to this subspace, yet.",
+        "You've not been subscribed to this subreddit, yet.",
         {
           status: 400,
         }
       )
     }
 
-    // create subspace and associate it with the user
+    // create subreddit and associate it with the user
     await db.subscription.delete({
       where: {
         userId_subredditId: {
@@ -50,7 +49,7 @@ export async function POST(req: Request) {
     }
 
     return new Response(
-      'Could not unsubscribe from subspace at this time. Please try later',
+      'Could not unsubscribe from subreddit at this time. Please try later',
       { status: 500 }
     )
   }

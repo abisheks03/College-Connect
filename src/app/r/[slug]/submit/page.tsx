@@ -1,4 +1,3 @@
-
 import { Editor } from '@/components/Editor'
 import { Button } from '@/components/ui/Button'
 import { db } from '@/lib/db'
