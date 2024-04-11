@@ -5,6 +5,12 @@ A social networking platform, will be exclusively designed for college students.
 
 ## Features
 - Authentication using NextAuth and Google
+- Custom feed for authenticated users
+- Image uploads and link previews
+- Commenting on user posts
+- Voting for posts
+- Events page that displays upcoming events
+  
 
 
 
