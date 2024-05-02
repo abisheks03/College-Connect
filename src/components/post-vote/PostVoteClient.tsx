@@ -9,7 +9,7 @@ import axios, { AxiosError } from 'axios'
 import { useEffect, useState } from 'react'
 import { toast } from '../../hooks/use-toast'
 import { Button } from '../ui/Button'
-import { ArrowBigDown, ArrowBigUp } from 'lucide-react'
+import { ArrowBigDown, ArrowBigUp, ThumbsDown, ThumbsUp } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 interface PostVoteClientProps {
@@ -85,7 +85,7 @@ const PostVoteClient = ({
         size='sm'
         variant='ghost'
         aria-label='upvote'>
-        <ArrowBigUp
+        <ThumbsUp
           className={cn('h-5 w-5 text-zinc-700', {
             'text-emerald-500 fill-emerald-500': currentVote === 'UP',
           })}
@@ -106,7 +106,7 @@ const PostVoteClient = ({
         })}
         variant='ghost'
         aria-label='downvote'>
-        <ArrowBigDown
+        <ThumbsDown
           className={cn('h-5 w-5 text-zinc-700', {
             'text-red-500 fill-red-500': currentVote === 'DOWN',
           })}
