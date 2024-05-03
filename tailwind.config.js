@@ -12,6 +12,13 @@ module.exports = {
         '2xl': '1400px',
       },
     },
+    variants: {
+      extend: {
+        boxShadow: ['hover'],
+        borderWidth: ['hover'],
+        scale: ['hover'],
+      },
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
