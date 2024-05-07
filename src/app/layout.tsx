@@ -6,7 +6,7 @@ import { Toaster } from '@/components/ui/Toaster'
 
 import '@/styles/globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({subsets: ['latin']})
 
 export const metadata = {
   title: 'College Connect',
