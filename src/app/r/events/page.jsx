@@ -4,10 +4,8 @@ import { getAuthSession } from "@/lib/auth";
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default async function Home() {
-  const session = await getAuthSession();
-  
+  const session = await getAuthSession();  
 
   return (
     <>
@@ -24,7 +22,7 @@ export default async function Home() {
       {/* EVENT #1  */}
       <div className="mt-[50px] h-full flex flex-wrap justify-center items-center gap-10">
         <div className="w-fit rounded overflow-hidden shadow-lg">
-          <Image
+          <Image 
             className="w-fit"
             src='/Bits With Benefits.png'
             width={150}
@@ -70,6 +68,53 @@ export default async function Home() {
           <div className="px-6 pt-4 pb-2"></div>
         </div> 
 
+        {/* EVENT #4 */}
+        <div className="w-fit rounded overflow-hidden shadow-lg">
+          <Image
+            className="w-fit"
+            src="/Improv .png"
+            width={150}
+            height={150}
+          />
+          <div className="px-6 py-4">
+            <div className="flex items-center justify-center font-bold text-xl mb-2">
+              Improv
+            </div>
+          </div>
+          <div className="px-6 pt-4 pb-2"></div>
+        </div>
+
+        {/* EVENT #5 */}
+        <div className="w-fit rounded overflow-hidden shadow-lg">
+          <Image
+            className="w-fit"
+            src="/Respawn .png"
+            width={150}
+            height={150}
+          />
+          <div className="px-6 py-4">
+            <div className="flex items-center justify-center font-bold text-xl mb-2">
+              Respawn
+            </div>
+          </div>
+          <div className="px-6 pt-4 pb-2"></div>
+        </div>
+
+        {/* EVENT #6 */}
+        <div className="w-fit rounded overflow-hidden shadow-lg">
+          <Image
+            className="w-fit"
+            src="/Riff-Off.jpg"
+            width={150}
+            height={150}
+          />
+          <div className="px-6 py-4">
+            <div className="flex items-center justify-center font-bold text-xl mb-2">
+              Riff Off
+            </div>
+          </div>
+          <div className="px-6 pt-4 pb-2"></div>
+        </div>
         
       </div>
     </>
